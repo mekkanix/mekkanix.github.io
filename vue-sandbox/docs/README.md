@@ -6,7 +6,7 @@
 
 ## Introduction
 
-This installable tool is designed to be installed as a local webserver that parses and serves compiled versions of your components.  
+This installable tool is designed to run as a local webserver that parses and serves compiled versions of your components.  
 Those are rendered in your web browser, alongside a fully-working playing panel to edit your components' data.
 
 ---
