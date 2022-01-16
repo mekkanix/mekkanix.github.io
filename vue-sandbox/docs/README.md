@@ -62,7 +62,7 @@ Run the following command in the folder where you want to install VueSandbox ([c
 curl -sS https://mekkanix.github.io/vue-sandbox/install.sh | sh
 ```
 
-*You can be asked for your password during installation. This is required because some commands need root privileges to install packages through APT.*
+> You can be asked for your password during installation. This is required because some commands need root privileges to install packages through APT.
 
 This will install required engines (git, nodejs, npm) and the VS tool in the current directory.
 
@@ -70,11 +70,13 @@ This will install required engines (git, nodejs, npm) and the VS tool in the cur
 
 ## Usage
 
-*Note: All VS-related commands & paths are scoped to the VS's root directory.*
+> All VS-related commands & paths are relative to the VS's root directory.
 
 ### Running
 
 Run the following command to start the VS utility: `yarn vstool`
+
+Once initialization is done, you can access to the tool's GUI at: `http://localhost:9000`
 
 ### Live-testing
 
@@ -85,25 +87,21 @@ The VueSandbox's concept for live-testing components relies on two main parts:
 
 To do so, VS uses a special directory to compile SFC source files, preparing them for live-testing.
 
-#### Public directory
+#### Storing components
 
 The `public/` directory must be used to store your components' source files. You can use subdirectories if needed.
 
-*Note: More configuration options will be added later, allowing you to change this folder.*
+Be sure that your components' dependency paths reflect your file hierarchy in that folder.  
 
-#### Rendering strategy
+?> Further release: Automatic path-editing system.
 
-<!-- 
-1. Once installed, you'll just need to run the following command in the VueSandbox's root directory to.
+> While running, VueSandbox will automatically caches any file changes in this folder (updating, creating, deleting). This way you don't have to restart the tool everytime you update component files.
 
-```sh
-cd /path/to/vue-sandbox/
-yarn vstool
-```
+?> Further release: Configuration options, allowing public directory change.
 
-2. Place the `.vue` component files you want to test in the `public/` directory, that is constantly watched by VueSandbox when running.
-   Any update to it (e.g. files addition, code updated...) will automatically trigger a new parsing operation.  
-  *Note: You can use nested directories to organize your components.*
+#### Rendering system
 
-3. Open your favorite browser and go to [`http://localhost:9000`](http://localhost:9000) to access to the tool GUI.  
-   You see and navigate through all of your components in the homepage. -->
+Once you select a component in the **portal** page, you are redirected to the live-testing panel.  
+This panel allows you to play with a Vue component, by editing its props' values directly and see render updates in real-time.
+
+> This system can only render one component at a time, but child components will also be rendered in the viewport if needed.
