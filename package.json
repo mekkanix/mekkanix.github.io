@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "docs:vs": "docsify serve ./vue-sandbox/docs",
+    "docs:vswrapper": "docsify serve ./vue-sandbox-wrapper/docs"
+  },
   "dependencies": {},
   "devDependencies": {
     "docsify-cli": "^4.4.3"
