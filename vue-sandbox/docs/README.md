@@ -1,6 +1,6 @@
 # VueSandbox
 
-> VueSandbox is a nodejs-based utility allowing you to live-play with your Vue components to see them in action!
+> VueSandbox is a [node.js](https://nodejs.org/en/)-based utility allowing you to play with your Vue components in live and see them in action!
 
 ---
 
