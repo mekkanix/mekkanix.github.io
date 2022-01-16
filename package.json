@@ -1,5 +1,14 @@
 {
-  "dependencies": {
-    "flatdoc": "^0.9.0"
-  }
+  "dependencies": {},
+  "devDependencies": {
+    "docsify-cli": "^4.4.3"
+  },
+  "name": "mekkanix.github.io",
+  "version": "0.0.1",
+  "description": "-",
+  "main": "-",
+  "repository": "git@github.com:mekkanix/mekkanix.github.io.git",
+  "author": "mekkanix <paulguzdariviere@gmail.com>",
+  "license": "MIT",
+  "private": false
 }
