@@ -13,7 +13,7 @@ This is the easiest and fastest way to get OwnTrack running.
 
 ### Using a package manager
 
-It can also be managed through a package manager.
+It can also be downloaded with a package manager.
 
 ```
 yarn add owntrack
