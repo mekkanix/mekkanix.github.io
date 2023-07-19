@@ -1,0 +1,5 @@
+* [Home](/)
+* [Getting Started](/getting-started)
+* [Configuration](/configuration)
+* [Usage](/usage)
+* [API Reference](/api-reference)
