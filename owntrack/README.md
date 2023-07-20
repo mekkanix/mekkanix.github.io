@@ -15,4 +15,4 @@ Once the user accepts tracking, OwnTrack will automatically inject scripts and/o
 
 ### Transparent use
 
-In order to keep tracking-related operations management as easy as possible, OwnTrack internally "wraps" services and their respective tracking functions before exposing them almost "as-is" through its public API. This way the developer can easily use its well-known tracking functions without manually checking for user consent choice each time you use it.
+In order to keep tracking-related operations management as easy as possible, OwnTrack internally "wraps" services and their respective tracking functions before exposing them almost "as-is" through its public API. This way the developer can easily use its well-known tracking functions the same way it was used to to do it, without manually checking for user consent choice each time you use it.
