@@ -11,7 +11,7 @@ Add the following lines in the `<head>` section of your file:
 
 **Important**: You **should not** add scripts given by tracking services providers to your code directly, otherwise they will bypass the protection guard. Include them in the OwnTrack configuration instead (see below).
 
-You can provide tracking services details to the configuration object required for the first `OwnTrack` function call:
+Then, initialize the OwnTrack guard by providing services' details to the configuration object required for the first call:
 
 ```js
 const ot = OwnTrack({
