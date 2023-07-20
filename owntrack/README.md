@@ -1,4 +1,4 @@
-# <div align="center">OwnTrack - Tracking Protection</div>
+# <div style="text-align: center">[WIP] OwnTrack</div>
 
 > A modern GDPR-compliant user-tracking protection guard that focuses on compatibility and flexibility.
 
@@ -10,7 +10,7 @@ By this way, it can theorically integrate with almost any tracking service. It m
 
 ### Strict blocking
 
-Behind the scenes, uses a **strict blocking** pattern for managing tracking services. Concretely, no tracking operation is performed until the user has accepted consent for corresponding service, neither third-party script imports nor the execution of an initialization script.  
+Behind the scenes, OwnTrack uses a **strict blocking** pattern for managing tracking services. Concretely, no tracking operation is performed until the user has accepted consent for corresponding service, neither third-party script imports nor the execution of an initialization script.  
 Once the user accepts tracking, OwnTrack will automatically inject scripts and/or perform the initialization by paying attention to execution order.
 
 ### Transparent use
