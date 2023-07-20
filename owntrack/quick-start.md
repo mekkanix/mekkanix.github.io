@@ -11,7 +11,7 @@ Add the following lines in the `<head>` section of your file:
 
 **Important**: You **should not** add scripts given by tracking services providers to your code directly, otherwise they will bypass the protection guard. Include them in the OwnTrack configuration instead (see below).
 
-Provide tracking services details to the configuration object required for the first `OwnTrack` function call:
+You can provide tracking services details to the configuration object required for the first `OwnTrack` function call:
 
 ```js
 const ot = OwnTrack({
@@ -35,4 +35,4 @@ const ot = OwnTrack({
 });
 ```
 
-Keep `scriptUrl`, `onInit` and `handlers` properties are used to define the initialization process of the tracking service. They are all optional but at least one of them is required for initializing the tracking service once user consent has been accepted.
+Note that `scriptUrl`, `onInit` and `handlers` properties are used to define the initialization process of the tracking service. They are all optional but at least one of them is required for initializing the tracking service once user consent has been accepted.
