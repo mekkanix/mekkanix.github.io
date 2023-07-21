@@ -1,4 +1,4 @@
-# [WIP] OwnTrack
+# [WIP] OwnTrack [beta]
 
 > A modern GDPR-compliant user-tracking protection guard that focuses on compatibility and flexibility.
 

@@ -21,7 +21,7 @@ Then, initialize the OwnTrack guard by providing services' details to the config
 const ot = OwnTrack({
   services: [
     {
-      name: 'ga', // Service name identifier (unique)
+      name: 'ga', // Service identifier name (unique)
       label: 'Google Analytics', // Displayed service label
       type: 'Analytics', // Displayed tracking type
       description: 'The Google-powered analytics platform.', // Displayed service description
@@ -49,9 +49,9 @@ Note that `scripts`, `onInit` and `handlers` are properties that works in conjun
 
 All of these properties are optional but your need to define at least one of them, in order to provide a way for initializing the tracking service.
 
-Further details about configuration options are available [here](/configuration).
-
 **Note:** Keep in mind that `handlers`-bound functions are only associated with services in which they are defined, not on other registered services.
+
+Further details about configuration options are available [here](/api-configuration).
 
 ## Tracking service usage
 
@@ -59,7 +59,7 @@ Once OwnTrack is initialized, you'll start to see a tracking consent banner on y
 
 ![OT tracking banner](./assets/ot-banner.png ':size=100%')
 
-To use the services your previously registered, OwnTrack provides a very simple syntax allowing you to use the functions you previously declared in the `handlers` property:
+To use the services your previously registered, OwnTrack provides a very simple syntax allowing you to call functions registered in the `handlers` property:
 
 ```js
 ot.service('ga').someTrackerFunction();
@@ -67,7 +67,7 @@ ot.service('<other-service>').someOtherTrackerFunction();
 // ...
 ```
 
-By calling functions this way, this ensure that they are executed **only** if the user accepts consent for the corresponding service.
+By calling them this way, this ensure that they are executed **only** if the user accepts consent for the corresponding service.
 
 In facts, functions exposed in the `.service()` method are simple "wrapper" functions that contain your real tracking functions, and conditionnaly execute them is the consent is accepted.  
 This approach has the main advantage of avoiding you to manually check for user consent each time you need to use tracking functions (for example, send events to the tracking webserver), and to simply call them no matter if the consent has already been accepted or not. OwnTrack handles all of this internally.
