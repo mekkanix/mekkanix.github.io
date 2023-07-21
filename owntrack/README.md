@@ -12,7 +12,7 @@ letting the developer have full control on its tracking integration. It manages 
 ### Strict blocking
 
 Behind the scenes, OwnTrack uses a **strict blocking** pattern for managing tracking services, which means that it doesn't trigger any tracking operation until the user has explicitly accepted consent for corresponding services (neither third-party script imports nor the execution of any initialization script).  
-Once the user accepts tracking, OwnTrack will automatically inject scripts and/or perform the initialization by paying attention to execution order.
+Once the user accepts tracking, OwnTrack will automatically inject scripts and initialize the tracking service if needed, in order to allow you to deal with tracking services once they are running.
 
 ### Transparent use
 

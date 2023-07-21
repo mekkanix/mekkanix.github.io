@@ -17,13 +17,13 @@ Then, initialize the OwnTrack guard by providing services' details to the config
 const ot = OwnTrack({
   services: [
     {
-      name: 'ga', // Unique service name identifier
+      name: 'ga', // Service name identifier (unique)
       label: 'Google Analytics', // Displayed service label
       type: 'Analytics', // Displayed tracking type
       description: 'The Google-powered analytics platform.', // Displayed service description
-      scriptUrl: 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX', // Tracking script URL (generally given by the service provider)
+      scriptUrl: 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX', // Tracking script URL (typically given by the service provider)
       onInit: () => {
-        // Tracker initialization script...
+        // Tracker initialization (typically given by the service provider)...
       },
       handlers: {
         someTrackerFunction() {},
@@ -35,4 +35,12 @@ const ot = OwnTrack({
 });
 ```
 
-Note that `scriptUrl`, `onInit` and `handlers` properties are used to define the initialization process of the tracking service. They are all optional but at least one of them is required for initializing the tracking service once user consent has been accepted.
+Note that `scriptUrl`, `onInit` and `handlers` are properties that works in conjunction to initialize the tracking service:
+
+- `scriptUrl` is used to define the full URL of the third-party tracking script
+- `onInit` is an initialization callback called right after the tracking service has been authorized and the eventual previous script has been injected
+- `handlers` are optional tracking functions that you want to submit to the protection guard
+
+All of these properties are optional but your need to define at least one of them, in order to provide a way for initializing the tracking service.
+
+Further details about configuration options are available [here](/configuration).
