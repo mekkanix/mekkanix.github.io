@@ -21,7 +21,9 @@ const ot = OwnTrack({
       label: 'Google Analytics', // Displayed service label
       type: 'Analytics', // Displayed tracking type
       description: 'The Google-powered analytics platform.', // Displayed service description
-      scriptUrl: 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX', // Tracking script URL (typically given by the service provider)
+      scripts: [
+        { url: 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX' }, // Tracking script URL (typically given by the service provider)
+      ],
       onInit: () => {
         // Tracker initialization (typically given by the service provider)...
       },
@@ -35,9 +37,9 @@ const ot = OwnTrack({
 });
 ```
 
-Note that `scriptUrl`, `onInit` and `handlers` are properties that works in conjunction to initialize the tracking service:
+Note that `scripts`, `onInit` and `handlers` are properties that works in conjunction to initialize the tracking service:
 
-- `scriptUrl` is used to define the full URL of the third-party tracking script
+- `scripts` is used to define URLs of third-party tracking scripts
 - `onInit` is an initialization callback called right after the tracking service has been authorized and the eventual previous script has been injected
 - `handlers` are optional tracking functions that you want to submit to the protection guard
 
