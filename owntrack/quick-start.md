@@ -57,7 +57,7 @@ Further details about configuration options are available [here](/configuration)
 
 Once OwnTrack is initialized, you'll start to see a tracking consent banner on your website (on each page OwnTrack script has been imported). This banner comes with a standard information message and three buttons (**Deny**, **Allow** and **Settings**), that asks the user to quickly accept/deny consent for all services at once, or to configure each service individually.
 
-![OT tracking banner](./assets/ot-tracking-banner.png ':size=100%')
+![OT tracking banner](./assets/ot-banner.png ':size=100%')
 
 To use the services your previously registered, OwnTrack provides a very simple syntax allowing you to use the functions you previously declared in the `handlers` property:
 
