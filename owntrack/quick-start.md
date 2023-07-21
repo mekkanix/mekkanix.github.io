@@ -51,6 +51,8 @@ All of these properties are optional but your need to define at least one of the
 
 Further details about configuration options are available [here](/configuration).
 
+**Note:** Keep in mind that `handlers`-bound functions are only associated with services in which they are defined, not on other registered services.
+
 ## Tracking service usage
 
 Once OwnTrack is initialized, you'll start to see a tracking consent banner on your website (on each page OwnTrack script has been imported). This banner comes with a standard information message and three buttons (**Deny**, **Allow** and **Settings**), that asks the user to quickly accept/deny consent for all services at once, or to configure each service individually.
@@ -69,3 +71,5 @@ By calling functions this way, this ensure that they are executed **only** if th
 
 In facts, functions exposed in the `.service()` method are simple "wrapper" functions that contain your real tracking functions, and conditionnaly execute them is the consent is accepted.  
 This approach has the main advantage of avoiding you to manually check for user consent each time you need to use tracking functions (for example, send events to the tracking webserver), and to simply call them no matter if the consent has already been accepted or not. OwnTrack handles all of this internally.
+
+Note that you can add as many service as you want (same for registered functions).
