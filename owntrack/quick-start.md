@@ -1,6 +1,6 @@
 # Quick Start
 
-## Installation
+## Install package
 
 The fastest and easiest way to get OwnTrack running is to import it directly in your HTML.  
 Add the following lines in the `<head>` section of your file:
@@ -13,7 +13,7 @@ Add the following lines in the `<head>` section of your file:
 
 **Important**: You **should not** add scripts given by tracking services providers to your code directly, otherwise they will bypass the protection guard. Include them in the OwnTrack configuration instead (see below).
 
-## Initialization
+## Initialize the tool
 
 Then, initialize the OwnTrack guard by providing services' details to the configuration object required for the first call:
 
@@ -49,11 +49,11 @@ Note that `scripts`, `onInit` and `handlers` are properties that works in conjun
 
 All of these properties are optional but your need to define at least one of them, in order to provide a way for initializing the tracking service.
 
-**Note:** Keep in mind that `handlers`-bound functions are only associated with services in which they are defined, not on other registered services.
+**Note:** Keep in mind that `handlers`-bound functions are only associated with the service in which they are defined, not on other registered services.
 
 Further details about configuration options are available [here](/api-configuration).
 
-## Tracking service usage
+## Use tracking service-specific functions
 
 Once OwnTrack is initialized, you'll start to see a tracking consent banner on your website (on each page OwnTrack script has been imported). This banner comes with a standard information message and three buttons (**Deny**, **Allow** and **Settings**), that asks the user to quickly accept/deny consent for all services at once, or to configure each service individually.
 
