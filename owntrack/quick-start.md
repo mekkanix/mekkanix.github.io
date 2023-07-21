@@ -41,7 +41,7 @@ const ot = OwnTrack({
 });
 ```
 
-Note that `scripts`, `onInit` and `handlers` are properties that works in conjunction to initialize the tracking service:
+Note that `scripts`, `onInit` and `handlers` are properties that works in conjunction and serves as an entrypoint to initialize the tracking service:
 
 - `scripts` is used to define URLs of third-party tracking scripts
 - `onInit` is an initialization callback called right after the tracking service has been authorized and the eventual previous script has been injected
