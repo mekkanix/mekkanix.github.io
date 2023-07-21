@@ -1,6 +1,7 @@
 - [Introduction](/ 'OwnTrack')
 - [Quick Start](/quick-start 'OwnTrack | Quick Start')
-<!-- - [Usage](/usage 'OwnTrack | Usage') -->
+- [Installation](/installation 'OwnTrack | Installation')
+- [Usage](/usage 'OwnTrack | Usage')
 
 - API
   - [Configuration](/api-configuration 'OwnTrack | Configuration')

@@ -4,7 +4,7 @@ Here is the full list of available configuration options and formats used for in
 
 ## Global configuration
 
-X
+Soon _(in a next release)_.
 
 ## Service configuration
 
@@ -62,13 +62,32 @@ Custom value.
 
 **Tracking service script(s).**
 
+This property accepts an array of _scripts_ objects to inject for initializing the tracking service. Each script element must follow this format:
+
+```js
+{
+  url: '<script-url>'
+}
+```
+
+_More customization options will be added in a next release._
+
 ### service.onInit
 
 | Type      | Required | Comment                                          |
 |-----------|----------|--------------------------------------------------|
 | function  | no       | required if `scripts` and `handlers` are omitted |
 
-**Tracking service script(s).**
+**Tracking service init callback.**
+
+Defines a callback to invoke right after the service consent has been accepted by the user.  
+Usually, tracking service providers ask you to add a small JS script to your page in order to initialize the tracker tool: the `onInit` property is used for that kind of operations.
+
+If a least one script is provided in the `service.scripts` property, OwnTrack will wait for them to be fully loaded before invoking the `onInit` callback.
+
+**Note:** You don't have to include `<script>` tags, if any.
+
+_More customization options will be added in a next release._
 
 ### service.handlers
 
@@ -76,4 +95,8 @@ Custom value.
 |-----------|----------|-------------------------------------------------|
 | object    | no       | required if `onInit` and `scripts` are omitted |
 
-**Tracking service script(s).**
+**Tracking service function(s).**
+
+Declares service tracking functions that must be submitted to the OwnTrack protection guard. All of these functions are wrapped and exposed in the `.service` method.
+
+Refer to the [Usage](/usage) section for more informations on how to use them through the `.service` method.
