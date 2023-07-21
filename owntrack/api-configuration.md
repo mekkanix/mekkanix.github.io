@@ -1,6 +1,6 @@
 # Configuration
 
-Here is the full list of available configuration options and formats used for initialization OwnTrack.
+Here is the full list of available configuration options and formats used to initialize OwnTrack.
 
 ## Global configuration
 
