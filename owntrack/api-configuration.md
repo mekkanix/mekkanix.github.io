@@ -4,15 +4,26 @@ Here is the full list of available configuration options and formats used to ini
 
 ## Global configuration
 
-Soon _(in a next release)_.
+### enableRequiredCookies
+
+| Type   | Required | Default | Comment |
+|--------|----------|---------|---------|
+| string | no       | `true`  | -       |
+
+**Displaying state of the "required cookies" service.**
+
+Defines whether or not the _required cookies_ service must be displayed
+in the settings panel.
+
+Note that this service does not contain user consent choice.
 
 ## Service configuration
 
 ### service.name
 
-| Type   | Required | Comment |
-|--------|----------|---------|
-| string | yes      | -       |
+| Type   | Required | Default     | Comment |
+|--------|----------|-------------|---------|
+| string | yes      | -           | -       |
 
 **Identifier name of the service (must be unique).**
 
@@ -20,9 +31,9 @@ Value used to identify the service. You need to provide this exact value when us
 
 ### service.label
 
-| Type   | Required | Comment |
-|--------|----------|---------|
-| string | no       | -       |
+| Type   | Required | Default     | Comment |
+|--------|----------|-------------|---------|
+| string | no       | `undefined` | -       |
 
 **Human-readable label of the service.**
 
@@ -34,9 +45,9 @@ This information is only displayed in the settings management panel.
 
 ### service.type
 
-| Type   | Required | Comment |
-|--------|----------|---------|
-| string | no       | -       |
+| Type   | Required | Default     | Comment |
+|--------|----------|-------------|---------|
+| string | no       | `undefined` | -       |
 
 **Tracking service type.**
 
@@ -45,9 +56,9 @@ Custom value.
 
 ### service.description
 
-| Type   | Required | Comment |
-|--------|----------|---------|
-| string | no       | -       |
+| Type   | Required | Default     | Comment |
+|--------|----------|-------------|---------|
+| string | no       | `undefined` | -       |
 
 **Tracking service description.**
 
@@ -56,9 +67,9 @@ Custom value.
 
 ### service.scripts
 
-| Type   | Required | Comment                                         |
-|--------|----------|-------------------------------------------------|
-| array  | no       | required if `onInit` and `handlers` are omitted |
+| Type   | Required | Default     | Comment                                         |
+|--------|----------|-------------|-------------------------------------------------|
+| string | no       | `undefined` | required if `onInit` and `handlers` are omitted |
 
 **Tracking service script(s).**
 
@@ -74,9 +85,9 @@ _More customization options will be added in a next release._
 
 ### service.onInit
 
-| Type      | Required | Comment                                          |
-|-----------|----------|--------------------------------------------------|
-| function  | no       | required if `scripts` and `handlers` are omitted |
+| Type   | Required | Default     | Comment                                          |
+|--------|----------|-------------|--------------------------------------------------|
+| string | no       | `undefined` | required if `scripts` and `handlers` are omitted |
 
 **Tracking service init callback.**
 
@@ -91,9 +102,9 @@ _More customization options will be added in a next release._
 
 ### service.handlers
 
-| Type      | Required | Comment                                         |
-|-----------|----------|-------------------------------------------------|
-| object    | no       | required if `onInit` and `scripts` are omitted |
+| Type   | Required | Default     | Comment                                          |
+|--------|----------|-------------|--------------------------------------------------|
+| string | no       | `undefined` | required if `onInit` and `scripts` are omitted |
 
 **Tracking service function(s).**
 
