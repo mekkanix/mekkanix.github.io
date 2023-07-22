@@ -1,6 +1,6 @@
 # OwnTrack [beta]
 
-> Modern and lightweight GDPR-compliant tracking management tool that focuses on compatibility and flexibility.
+> Modern and lightweight GDPR-compliant tracking management tool that focuses on simplicity and flexibility.
 
 ## Fundamentals
 
@@ -19,4 +19,4 @@ Once the user accepts tracking, OwnTrack will automatically inject scripts and i
 
 In order to keep tracking-related operations management as easy as possible, OwnTrack internally "wraps" services and their respective tracking functions before exposing them almost as-is through its public API. This way the developer can easily use classic tracking functions the same way it was used to do it, without manually checking for user consent choice each time these functions are used.
 
-## Responsive
+## Simple & Responsive
