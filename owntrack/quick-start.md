@@ -59,7 +59,7 @@ Once OwnTrack is initialized, you'll start to see a tracking consent banner on y
 
 ![OT tracking banner](./assets/ot-banner.png ':size=100%')
 
-To use the services your previously registered, OwnTrack provides a very simple syntax allowing you to call functions registered in the `handlers` property:
+To use the services you previously registered, OwnTrack provides a very simple syntax allowing you to call functions registered in the `handlers` property:
 
 ```js
 ot.service('ga').someTrackerFunction();
