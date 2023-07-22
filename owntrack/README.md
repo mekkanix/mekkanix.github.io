@@ -1,6 +1,6 @@
 # OwnTrack [beta]
 
-> A modern GDPR-compliant user-tracking protection guard that focuses on compatibility and flexibility.
+> Modern and lightweight GDPR-compliant user-tracking protection guard that focuses on compatibility and flexibility.
 
 ## Fundamentals
 
