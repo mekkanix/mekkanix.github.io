@@ -2,6 +2,8 @@
 
 Here is the full list of available configuration options and formats used to initialize OwnTrack.
 
+This configuration object must be provided as first argument when calling the `OwnTrack` global function for the first time.
+
 ## Global configuration
 
 ### enableRequiredCookies

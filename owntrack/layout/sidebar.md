@@ -5,4 +5,4 @@
 
 - API
   - [Configuration](/api-configuration 'OwnTrack | Configuration')
-  - [Reference](/api-reference 'OwnTrack | Reference')
+  - [Methods](/api-methods 'OwnTrack | Methods')
