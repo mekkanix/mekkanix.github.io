@@ -8,8 +8,8 @@ You can include them in your project either by direct import from a CDN or using
 
 <!-- prettier-ignore -->
 ```html
-<link href="https://cdn.jsdelivr.net/npm/owntrack@1.0.0-beta.2/dist/owntrack.min.css" rel="stylesheet" />
-<script src="https://cdn.jsdelivr.net/npm/owntrack@1.0.0-beta.2/dist/owntrack.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/owntrack@1.0.0-beta.3/dist/owntrack.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/owntrack@1.0.0-beta.3/dist/owntrack.min.js"></script>
 ```
 
 ## Package manager

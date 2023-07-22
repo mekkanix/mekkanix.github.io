@@ -7,8 +7,8 @@ Add the following lines in the `<head>` section of your file:
 
 <!-- prettier-ignore -->
 ```html
-<link href="https://cdn.jsdelivr.net/npm/owntrack@1.0.0-beta.2/dist/owntrack.min.css" rel="stylesheet" />
-<script src="https://cdn.jsdelivr.net/npm/owntrack@1.0.0-beta.2/dist/owntrack.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/owntrack@1.0.0-beta.3/dist/owntrack.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/owntrack@1.0.0-beta.3/dist/owntrack.min.js"></script>
 ```
 
 **Important**: You **should not** add scripts given by tracking services providers to your code directly, otherwise they will bypass the protection guard. Include them in the OwnTrack configuration instead (see below).
