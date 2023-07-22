@@ -69,7 +69,7 @@ Custom value.
 
 | Type   | Required | Default     | Comment                                         |
 |--------|----------|-------------|-------------------------------------------------|
-| string | no       | `undefined` | required if `onInit` and `handlers` are omitted |
+| array  | no       | `undefined` | required if `onInit` and `handlers` are omitted |
 
 **Tracking service script(s).**
 
